@@ -1,5 +1,9 @@
+const { db } = require("../db/connection");
+const { Sequelize, DataTypes } = require("sequelize");
 
-let Comment;
-
+const Comment = db.define("User", {
+  body: DataTypes.STRING,
+  createdAt: DataTypes.STRING,
+});
 
 module.exports = Comment;
